@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Antonio Caballes</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<style>
+    .toggle-checkbox:checked {
+        right: 0;
+        border-color: #68d391;
+    }
+
+    .toggle-checkbox:checked+.toggle-label {
+        background-color: #68d391;
+    }
+</style>
+
+<body
+    class="h-14 bg-gradient-to-r bg-no-repeat bg-center bg-fixed from-blue-600 to-blue-200 dark:from-blue-900 dark:to-gray-900">
+    <!-- header -->
+    <header>
+        <div class="container flex justify-end py-1 mt-4 sm:mt-12">
+            <div
+                class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in items-center">
+                <input type="checkbox" name="toggle" id="toggle"
+                    class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                <label for="toggle"
+                    class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+            </div>
+        </div>
+        <div class="flex flex-1 sm:hidden justify-end text-black dark:text-white">
+            <i data-feather="paperclip"></i>
+        </div>
+    </header>
+
+    <!-- main -->
+    <div class="container grid grid-cols-12 gap-12 sm:mt-10 lg:mt-[220px]">
+        <!-- left panel -->
+        <div class="col-span-12 sm:pt-10 lg:col-span-4 hidden lg:block h-screen sticky top-44">
+            <div
+                class="w-full mb-6 lg:mb-0 mx-auto relative bg-white dark:bg-[#111111] text-center px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+                <img src="../assets/images/1by1.jpg"
+                    class="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
+                    alt="">
+                <div class="pt-[100px] pb-8">
+                    <h2 class="text-[24px] font-semibold fon mt-6 dark:text-[#FA5252]">Antonio Caballes</h2>
+                    <h3 class="text-[18px] font-Poppins inline-block text-gray-400 dark:text-white">Software Engineer
+                    </h3>
+                    <div class="flex justify-center space-x-3 dark:text-white">
+                        <a class="mx-3" href="https://github.com/arcpac"><i data-feather="github"></i></a>
+                        <a class="mx-3" href="https://www.linkedin.com/in/antonio-caballes-a44a4a18b/"><i data-feather="linkedin"></i></a>
+                        <a class="mx-3" href="mailto:antonraphaelcaballes@gmail.com?subject = Portfolio = Message"><i data-feather="send"></i></a>
+                    </div>
+                    <!-- info items -->
+                    <div class="p-7 rounded-2xl bg-slate-200 dark:bg-[#1E293B] dark:text-gray-100 my-3">
+                        <div class="flex border-b border-gray-400 dark:border-black pb-2">
+                            <div class="text-left text-sm text-gray-600">
+                                <p class="dark:text-[#FA5252] font-semibold">Contact</p>
+                                <p class="dark:text-white">+61-452-437-783</p>
+                            </div>
+                        </div>
+                        <div class="flex border-b border-gray-400 dark:border-black pb-2 pt-3">
+                            <div class="text-left text-sm text-gray-600">
+                                <p class="dark:text-[#FA5252] font-semibold">Email</p>
+                                <p class="dark:text-white">antonraphaelcaballes@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex border-b border-gray-400 dark:border-black pb-2 pt-3">
+                            <div class="text-left text-sm text-gray-600">
+                                <p class="dark:text-[#FA5252] font-semibold">Location</p>
+                                <p class="dark:text-white">Australia</p>
+                            </div>
+                        </div>
+                        <div class="flex border-b border-gray-400 dark:border-black pb-2 pt-3">
+                            <div class="text-left text-sm text-gray-600">
+                                <p class="dark:text-[#FA5252] font-semibold">Year of birth</p>
+                                <p class="dark:text-white">1993</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- resume download -->
+                    <button type="button"
+                        class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 rounded-3xl text-sm px-5 py-2.5 text-center mr-2">Download Resume</button>
+                </div>
+            </div>
+        </div>
+        <!-- right panel -->
+        <div class="col-span-12 lg:col-span-8">
+            <!-- navigation bar -->
+            <header class="sm:hidden md:hidden lg:block p-[30px] mb-10 rounded-[16px] bg-white">
+                <nav class="hidden lg:block ">
+                    <ul class="flex justify-center">
+                        <li
+                            class="w-24 dark:bg-green-800 bg-gradient-to-r from-purple-300 to-blue-500 rounded-lg p-5 mx-3 text-white">
+                            <a class="flex flex-col justify-center items-center" href="index.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="user"></i>
+                                </span>
+                                About
+                            </a>
+                        </li>
+                        <li class="w-24 rounded-lg p-5 mx-3 bg-gray-200">
+                            <a class="flex flex-col justify-center items-center" href="knowledge.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="heart"></i>
+                                </span>
+                                Knowledges
+                            </a>
+                        </li>
+                        <li class="w-24 rounded-lg p-5 mx-3 bg-gray-200">
+                            <a class="flex flex-col justify-center items-center" href="works.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="briefcase"></i>
+                                </span>
+                                Works
+                            </a>
+                        </li>
+                        <li class="w-24 rounded-lg p-5 mx-3 bg-gray-200">
+                            <a class="flex flex-col justify-center items-center" href="construction.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="phone"></i>
+                                </span>
+                                Contact
+                            </a>
+                        </li>
+                        <li class="w-24 rounded-lg p-5 mx-3 bg-gray-200">
+                            <a class="flex flex-col justify-center items-center" href="construction.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="image"></i>
+                                </span>
+                                Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- content -->
+            <div class="bg-white dark:bg-[#9197A0] sm:rounded-2xl md:rounded-2xl lg:rounded-2xl sm:pt-10 sm:my-10 md:pt-9 md:my-9">
+                <!-- about me -->
+                <div class="container">
+                    <div class="sm:px-5 sm:py-4 sm:pt-4 md:py-4 md:px-10 lg:px-14 lg:pt-14">
+                        <h2 class="text-2xl font-Poppins font-bold">About Me</h2>
+                        <div class="grid lg:grid-cols-12 gap-10 pt-4">
+                            <div class="col-span-12 text-justify">
+                                <p class="leading-7">
+                                    II am a software engineer specialising in a web application development. For the
+                                    past 4 years, I have been developing applications using Elixir, GraphQL, PHP, HTML,
+                                    CSS (Tailwind & Bootstrap) and Javascript.
+                                </p>
+                                <p class="leading-7 mt-2">
+                                    I am currently taking my masters (Maters in Information Technology) degree in
+                                    Australia. In spite of taking education, I’m hands on my skills mainly on Elixir,
+                                    API, and Web Development. Other than that, there are other tasks that I was involved
+                                    such as algorithms, testing (TDD), client/vendor support and systems analysis
+                                    (functional & non-functional specification).
+                                </p>
+                                <p class="leading-7 mt-2">
+                                    What I love about software development is the way I learn by myself and discover
+                                    different ways to implement techniques. By this, I feel like a geek and it craves me
+                                    to learn and discover more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skills -->
+                    <div class="sm:px-5 sm:py-4 md:py-4 md:px-10 lg:px-14 lg:pt-14">
+                        <h2 class="text-2xl font-Poppins font-bold">My Skills</h2>
+                        <div class="grid gap-8 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 pt-4">
+                            <!-- cards -->
+                            <div class="bg-yellow-100 dark:bg-[#1E293B] dark:text-[#A6A6A6] hover:bg-orange-100 rounded-md bg-opacity-25 p-5">
+                                <div class="flex flex-col gap-1 space-y-1">
+                                    <img class="w-20 h-20 object-contain block" src="../assets/images/code.png" alt="">
+                                    <div>
+                                        <h3 class="text-xl font-Poppins font-semibold">Web Development</h3>
+                                        <p>Elixir, GraphQL, PHP, HTML, CSS (Tailwind & Bootstrap) and Javascript.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-yellow-100 dark:bg-[#1E293B] dark:text-[#A6A6A6] hover:bg-orange-100 rounded-md bg-opacity-25 p-5">
+                                <div class="flex flex-col gap-1 space-y-1">
+                                    <img class="w-20 h-20 object-contain block" src="../assets/images/ui.png" alt="">
+                                    <div>
+                                        <h3 class="text-xl font-Poppins font-semibold">UI Design</h3>
+                                        <div class="ml-3">
+                                            <ul class="list-disc">
+                                                <li>Tailwind</li>
+                                                <li>Bootstrap</li>
+                                                <li>HTML & CSS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-yellow-100 dark:bg-[#1E293B] dark:text-[#A6A6A6] hover:bg-orange-100 rounded-md bg-opacity-25 p-5">
+                                <div class="flex flex-col gap-1 space-y-1">
+                                    <img class="w-20 h-20 object-contain block" src="../assets/images/ui.png" alt="">
+                                    <div>
+                                        <h3 class="text-xl font-Poppins font-semibold">System Analysis</h3>
+                                        <div class="ml-3">
+                                            <ul class="list-disc">
+                                                <li>Functional and Non-functional analysis</li>
+                                                <li>System subject matter expert</li>
+                                                <li>Client support</li>
+                                                <li>Customer and product specific knowledge repository <b>(Level 1 Support<b></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- knowledges -->
+                    <div class="sm:px-5 sm:py-4 md:py-4 md:px-10 lg:px-14 lg:pt-14">
+                        <div class="grid grid-cols-1 gap-2">
+                            <a href="knowledge.html" class="flex flex-row">
+                                <div class="mr-2"><i data-feather="link-2"></i></div>
+                                <h3 class="text-2xl font-Poppins font-bold text-black">Knowledges</h3>
+                            </a>
+                            <div class="col-span-1">
+                                <div class="flex flex-wrap gap-y-4 my-2 py-2">
+                                    <span
+                                        class="inline-flex items-center py-3 px-3 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded-lg dark:bg-[#1C1C1C] dark:text-gray-400">Elixir
+                                        Phoenix</span>
+                                    <span
+                                        class="inline-flex items-center py-3 px-3 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded-lg dark:bg-[#1C1C1C] dark:text-gray-400">Tailwind
+                                        & Boostrap</span>
+                                    <span
+                                        class="inline-flex items-center py-3 px-3 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded-lg dark:bg-[#1C1C1C] dark:text-gray-400">Bootstrap</span>
+                                    <span
+                                        class="inline-flex items-center py-3 px-3 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded-lg dark:bg-[#1C1C1C] dark:text-gray-400">PHP</span>
+                                    <span
+                                        class="inline-flex items-center py-3 px-3 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded-lg dark:bg-[#1C1C1C] dark:text-gray-400">Linux
+                                        & Windows</span>
+                                    <span
+                                        class="inline-flex items-center py-3 px-3 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded-lg dark:bg-[#1C1C1C] dark:text-gray-400">API
+                                        (GraphQL, Elixir: Absinthe)</span>
+                                    <span
+                                        class="inline-flex items-center py-3 px-3 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded-lg dark:bg-[#1C1C1C] dark:text-gray-400">GIT</span>
+                                    <span
+                                        class="inline-flex items-center py-3 px-3 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded-lg dark:bg-[#1C1C1C] dark:text-gray-400">Linux
+                                        shell scripting</span>
+                                    <span
+                                        class="inline-flex items-center py-3 px-3 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded-lg dark:bg-[#1C1C1C] dark:text-gray-400">System
+                                        analysis and design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- featured something -->
+                    <!-- <div class="px-2 sm:px-5 md:px-10 lg:px-14">
+                        <div class="grid gap-8 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 pt-4">
+                            <h2 class="text-2xl font-Slabs">Featured something</h2>
+                        </div>
+                    </div> -->
+                    <!-- footer -->
+                    <div class="">
+                        <p class="text-center py-6 lg:pt-12 text-gray-500">
+                            © 2022 All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
