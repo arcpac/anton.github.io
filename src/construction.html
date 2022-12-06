@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Constructing..</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<style>
+    .toggle-checkbox:checked {
+        right: 0;
+        border-color: #68d391;
+    }
+
+    .toggle-checkbox:checked+.toggle-label {
+        background-color: #68d391;
+    }
+</style>
+
+<body
+    class="h-14 bg-gradient-to-r bg-no-repeat bg-center bg-fixed from-blue-600 to-blue-200 dark:from-blue-900 dark:to-gray-900">
+    <!-- header -->
+    <header>
+        <div class="container flex justify-end py-1 mt-4 sm:mt-12">
+            <div
+                class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in items-center">
+                <input type="checkbox" name="toggle" id="toggle"
+                    class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                <label for="toggle"
+                    class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+            </div>
+        </div>
+        <div class="flex flex-1 sm:hidden justify-end text-black dark:text-white">
+            <i data-feather="paperclip"></i>
+        </div>
+    </header>
+
+    <!-- main -->
+<div class="h-screen w-full flex flex-col justify-center items-center  bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed">
+<h1 class="text-7xl leading-none text-white font-bold md:text-5xl my-2">Anton is constructing this page.</h1>
+<h2 class="text-7xl leading-none text-white font-thin md:text-3xl my-2">Coming soon!</h2>
+<label for="file" class="text-7xl leading-none text-white font-thin md:text-lg my-2">Progress: 46%</label>
+
+<progress id="file" max="100" value="46"> 70% </progress>
+
+<a type="button" class="my-10 font-bold text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 rounded-3xl text-md px-5 py-2.5 text-center" href="index.html">Back to home</a>
+</div>
+    <script src="app.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>

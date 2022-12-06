@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Works</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<style>
+    .toggle-checkbox:checked {
+        right: 0;
+        border-color: #68d391;
+    }
+
+    .toggle-checkbox:checked+.toggle-label {
+        background-color: #68d391;
+    }
+</style>
+
+<body
+    class="h-14 bg-gradient-to-r bg-no-repeat bg-center bg-fixed from-blue-600 to-blue-200 dark:from-blue-900 dark:to-gray-900">
+    <!-- header -->
+    <header>
+        <div class="container flex justify-end py-1 mt-4 sm:mt-12">
+            <div
+                class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in items-center">
+                <input type="checkbox" name="toggle" id="toggle"
+                    class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                <label for="toggle"
+                    class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+            </div>
+        </div>
+        <div class="flex flex-1 sm:hidden justify-end text-black dark:text-white">
+            <i data-feather="paperclip"></i>
+        </div>
+    </header>
+
+    <!-- main -->
+    <div class="container grid grid-cols-12 gap-12 sm:mt-10 lg:mt-[220px]">
+        <!-- left panel -->
+        <div class="col-span-12 sm:pt-10 lg:col-span-4 hidden lg:block h-screen sticky top-44">
+            <div
+                class="w-full mb-6 lg:mb-0 mx-auto relative bg-white dark:bg-[#111111] text-center px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+                <img src="../assets/images/1by1.jpg"
+                    class="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
+                    alt="">
+                <div class="pt-[100px] pb-8">
+                    <h2 class="text-[24px] font-semibold fon mt-6 dark:text-[#FA5252]">Antonio Caballes</h2>
+                    <h3 class="text-[18px] font-Poppins inline-block text-gray-400 dark:text-white">Software Engineer
+                    </h3>
+                    <div class="flex justify-center space-x-3 dark:text-white">
+                        <a class="mx-3" href="https://www.facebook.com/"><i data-feather="github"></i></a>
+                        <a class="mx-3" href="https://www.facebook.com/"><i data-feather="linkedin"></i></a>
+                        <a class="mx-3" href="https://www.facebook.com/"><i data-feather="send"></i></a>
+                    </div>
+                    <!-- info items -->
+                    <div class="p-7 rounded-2xl bg-slate-200 dark:bg-[#1E293B] dark:text-gray-100 my-3">
+                        <div class="flex border-b border-gray-400 dark:border-black pb-2">
+                            <div class="text-left text-sm text-gray-600">
+                                <p class="dark:text-[#FA5252] font-semibold">Contact</p>
+                                <p class="dark:text-white">+61-452-437-783</p>
+                            </div>
+                        </div>
+                        <div class="flex border-b border-gray-400 dark:border-black pb-2 pt-3">
+                            <div class="text-left text-sm text-gray-600">
+                                <p class="dark:text-[#FA5252] font-semibold">Email</p>
+                                <p class="dark:text-white">antonraphaelcaballes@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex border-b border-gray-400 dark:border-black pb-2 pt-3">
+                            <div class="text-left text-sm text-gray-600">
+                                <p class="dark:text-[#FA5252] font-semibold">Location</p>
+                                <p class="dark:text-white">Australia</p>
+                            </div>
+                        </div>
+                        <div class="flex border-b border-gray-400 dark:border-black pb-2 pt-3">
+                            <div class="text-left text-sm text-gray-600">
+                                <p class="dark:text-[#FA5252] font-semibold">Year of birth</p>
+                                <p class="dark:text-white">1993</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- resume download -->
+                    <button type="button"
+                        class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 rounded-3xl text-sm px-5 py-2.5 text-center mr-2">Download
+                        Resume</button>
+                </div>
+            </div>
+        </div>
+        <!-- right panel -->
+        <div class="col-span-12 lg:col-span-8">
+            <!-- navigation bar -->
+            <header class="sm:hidden md:hidden lg:block p-[30px] mb-10 rounded-[16px] bg-white">
+                <nav class="hidden lg:block ">
+                    <ul class="flex justify-center">
+                        <li class="w-24 rounded-lg p-5 mx-3 bg-gray-200">
+                            <a class="flex flex-col justify-center items-center" href="index.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="user"></i>
+                                </span>
+                                About
+                            </a>
+                        </li>
+                        <li class="w-24 rounded-lg p-5 mx-3 bg-gray-200">
+                            <a class="flex flex-col justify-center items-center" href="knowledge.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="heart"></i>
+                                </span>
+                                Knowledges
+                            </a>
+                        </li>
+                        <li
+                            class="w-24 dark:bg-green-800 bg-gradient-to-r from-purple-300 to-blue-500 rounded-lg p-5 mx-3 text-white">
+                            <a class="flex flex-col justify-center items-center" href="works.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="briefcase"></i>
+                                </span>
+                                Works
+                            </a>
+                        </li>
+                        <li class="w-24 rounded-lg p-5 mx-3 bg-gray-200">
+                            <a class="flex flex-col justify-center items-center" href="construction.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="phone"></i>
+                                </span>
+                                Contact
+                            </a>
+                        </li>
+                        <li class="w-24 rounded-lg p-5 mx-3 bg-gray-200">
+                            <a class="flex flex-col justify-center items-center" href="construction.html">
+                                <span class="text-2xl mb-2">
+                                    <i data-feather="image"></i>
+                                </span>
+                                Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- content -->
+            <div class="bg-white dark:bg-[#9197A0] sm:rounded-2xl md:rounded-2xl lg:rounded-2xl sm:pt-10 sm:my-10 md:pt-9 md:my-9">
+                <!-- about me -->
+                <div class="container">
+                    <div class="sm:px-5 sm:py-4 sm:pt-4 md:py-4 md:px-10 lg:px-14 lg:pt-14">
+                        <h2 class="text-2xl font-Poppins font-bold text-black">Works</h2>
+                        <div class="grid gap-8 grid-cols-1 pt-4">
+                            <!-- Work experiences -->
+                            <div class="p-5 rounded-lg mb-2 h-full bg-[#F2F4FF] dark:border-[#212425] dark:border-2 dark:bg-[#1E293B]">
+                                <div class="overflow-hidden rounded-lg">
+                                    <!-- <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                        src="../assets/images/graphql.png" alt=""> -->
+                                    <img class="w-20 h-20 object-contain block" src="../assets/images/yondu.png"
+                                        alt="">
+                                </div>
+                                <div class="flex mt-4 text-xs text-gray-lite dark:text-[#9197A0]">
+                                    <span class=""> June 24, 2021</span>
+                                    <span
+                                        class="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
+                                        February 22, 2022
+                                    </span>
+                                </div>
+                                <h3
+                                    class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    Systems Analyst
+                                </h3>
+                                <h3
+                                    class="text-sm font-normal dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    Yondu Inc.
+                                </h3>
+                                <div class="ml-3 dark:text-white">
+                                    <ul class="list-disc">
+                                        <li>Document system requirements
+                                        </li>
+                                        <li>Monitor implemented software's effectiveness. (Splunk, Shell scripting,
+                                            Jenkins deployment, testing, software support)</li>
+                                        <li>Client / vendor support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-5 rounded-lg mb-2 h-full bg-[#F2F4FF] dark:border-[#212425] dark:border-2 dark:bg-[#1E293B]">
+                                <div class="overflow-hidden rounded-lg">
+                                    <!-- <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                        src="../assets/images/graphql.png" alt=""> -->
+                                    <img class="w-20 h-20 object-contain block" src="../assets/images/pragtech.png"
+                                        alt="">
+                                </div>
+                                <div class="flex mt-4 text-xs text-gray-lite dark:text-[#A6A6A6]">
+                                    <span class=""> Aug. 1, 2019</span>
+                                    <span
+                                        class="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
+                                        June 10, 2021
+                                    </span>
+
+                                </div>
+                                <h3
+                                    class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    Software Engineer
+                                </h3>
+                                <h3
+                                    class="text-sm font-normal dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    Pragtechnologies Inc.
+                                </h3>
+                                <div class="ml-3 dark:text-white">
+                                    <ul class="list-disc">
+                                        <li>Elixir (Absinthe, GraphQL, API, Phoenix Framework)</li>
+                                        <li>SeeYouDoc - health care services for convenient booking
+                                            appointment and online appointments.</li>
+                                        <li>Client support</li>
+                                        <li>Textstack - A SMS campaign tool.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-5 rounded-lg mb-2 h-full bg-[#F2F4FF] dark:border-[#212425] dark:border-2 dark:bg-[#1E293B]">
+                                <div class="overflow-hidden rounded-lg">
+                                    <!-- <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                        src="../assets/images/graphql.png" alt=""> -->
+                                    <img class="w-20 h-20 object-contain block" src="../assets/images/bounty.png"
+                                        alt="">
+                                </div>
+                                <div class="flex mt-4 text-xs text-gray-lite dark:text-[#A6A6A6]">
+                                    <span class="">Feb. 18, 2019</span>
+                                    <span
+                                        class="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
+                                        July 31, 2019
+                                    </span>
+
+                                </div>
+                                <h3
+                                    class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    Software Developer
+                                </h3>
+                                <h3
+                                    class="text-sm font-normal dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    Bounty Fresh Food Inc.
+                                </h3>
+                                <div class="ml-3 dark:text-white">
+                                    <ul class="list-disc">
+                                        <li>Javascript, HTML, CSS, JQuery</li>
+                                        <li>CodeIgniter</li>
+                                        <li>Web applications</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-5 rounded-lg mb-2 h-full bg-[#F2F4FF] dark:border-[#212425] dark:border-2 dark:bg-[#1E293B]">
+                                <div class="overflow-hidden rounded-lg">
+                                    <!-- <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                src="../assets/images/graphql.png" alt=""> -->
+                                    <img class="w-20 h-20 object-contain block" src="../assets/images/systech.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="flex mt-4 text-xs text-gray-lite dark:text-[#A6A6A6]">
+                                    <span class="">July 4,2018</span>
+                                    <span
+                                        class="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
+                                        February 15, 2019
+                                    </span>
+                                </div>
+                                <h3
+                                    class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    Systems Implementation Specialist </h3>
+                                <h3
+                                    class="text-sm font-normal dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    HDI System Technology, Inc.
+                                </h3>
+                                <div class="ml-3 dark:text-white">
+                                    <ul class="list-disc">
+                                        <li>Client / vendor support (HRIS System)</li>
+                                        <li>Function and non-functional requirements </li>
+                                        <li>Alignment with the requirement of clients to gain full customer satisfaction
+                                        </li>
+                                        <li>Database analysis</li>
+                                        <li>Software testing</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-5 rounded-lg mb-2 h-full bg-[#F2F4FF] dark:border-[#212425] dark:border-2 dark:bg-[#1E293B]">
+                                <div class="overflow-hidden rounded-lg">
+                                    <!-- <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                src="../assets/images/graphql.png" alt=""> -->
+                                    <img class="w-20 h-20 object-contain block" src="../assets/images/opti.png"
+                                        alt="">
+                                </div>
+                                <div class="flex mt-4 text-xs text-gray-lite dark:text-[#A6A6A6]">
+                                    <span class="">July 4, 2016</span>
+                                    <span
+                                        class="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
+                                        June 30, 2018
+                                    </span>
+                                </div>
+                                <h3
+                                    class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    SEO Link Builder</h3>
+                                <h3
+                                    class="text-sm font-normal dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    Optimind Technology Solutions.
+                                </h3>
+                                <div class="ml-3 dark:text-white">
+                                    <ul class="list-disc">
+                                        <li>Website traffic analysis (Google Webmaster)</li>
+                                        <li>Google Analytics, Trend analysis in MOZ, Semrush.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-5 rounded-lg mb-2 h-full bg-[#F2F4FF] dark:border-[#212425] dark:border-2 dark:bg-[#1E293B]">
+                                <div class="overflow-hidden rounded-lg">
+                                    <!-- <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                                src="../assets/images/graphql.png" alt=""> -->
+                                    <img class="w-20 h-20 object-contain block" src="../assets/images/abi.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="flex mt-4 text-xs text-gray-lite dark:text-[#A6A6A6]">
+                                    <span class="">August 15, 2015</span>
+                                    <span
+                                        class="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
+                                        June 30, 2016
+                                    </span>
+                                </div>
+                                <h3
+                                    class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    SEO Link Builder</h3>
+                                <h3
+                                    class="text-sm font-normal dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    Asia Brewery Inc.
+                                </h3>
+                                <div class="ml-3 dark:text-white">
+                                    <ul class="list-disc">
+                                        <li>Documentation (Functional and non-functional requirements).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="text-center py-6 lg:pt-12 text-gray-500">
+                            © 2022 All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
