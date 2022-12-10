@@ -20,21 +20,19 @@
     }
 </style>
 
-<body
-    class="h-14 bg-gradient-to-r bg-no-repeat bg-center bg-fixed from-blue-600 to-blue-200 dark:from-blue-900 dark:to-gray-900">
+<body class="h-14 bg-gradient-to-r bg-no-repeat bg-center bg-fixed from-blue-600 to-blue-200 dark:from-blue-900 dark:to-gray-900">
     <!-- header -->
     <header>
-        <div class="container flex justify-end py-1 mt-4 sm:mt-12">
-            <div
-                class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in items-center">
+        <div class="container flex items-center justify-end py-1 mt-4 sm:mt-12">
+            <div class="relative inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in items-center">
                 <input type="checkbox" name="toggle" id="toggle"
                     class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
                 <label for="toggle"
                     class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
             </div>
-        </div>
-        <div class="flex flex-1 sm:hidden justify-end text-black dark:text-white">
-            <i data-feather="paperclip"></i>
+            <div class="sm:hidden md:hidden lg:hidden bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center items-center text-white dark:text-white text-3xl ml-3 ">
+                <i data-feather="menu"></i>
+            </div>
         </div>
     </header>
 
@@ -42,8 +40,7 @@
     <div class="container grid grid-cols-12 gap-12 sm:mt-10 lg:mt-[220px]">
         <!-- left panel -->
         <div class="col-span-12 sm:pt-10 lg:col-span-4 hidden lg:block h-screen sticky top-44">
-            <div
-                class="w-full mb-6 lg:mb-0 mx-auto relative bg-white dark:bg-[#111111] text-center px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+            <div class="w-full mb-6 lg:mb-0 mx-auto relative bg-white dark:bg-[#111111] text-center px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
                 <img src="../assets/images/1by1.jpg"
                     class="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
                     alt="">
@@ -141,7 +138,7 @@
             </header>
 
             <!-- content -->
-            <div class="bg-white dark:bg-[#9197A0] sm:rounded-2xl md:rounded-2xl lg:rounded-2xl sm:pt-10 sm:my-10 md:pt-9 md:my-9">
+            <div class="bg-white dark:bg-[#9197A0] [320px]:rounded-2xl sm:rounded-2xl md:rounded-2xl lg:rounded-2xl sm:pt-10 sm:my-10 md:pt-9 md:my-9">
                 <!-- about me -->
                 <div class="container">
                     <div class="sm:px-5 sm:py-4 sm:pt-4 md:py-4 md:px-10 lg:px-14 lg:pt-14">
