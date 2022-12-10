@@ -36,3 +36,28 @@ checkbox.addEventListener('change', function () {
         console.log(localStorage.getItem("dark"));
     }
 });
+
+function menuToggle() {
+    var x = document.getElementById("toggleMenu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+window.addEventListener("resize", myFunction);
+
+function myFunction() {
+    var bars = document.getElementById("bars");
+    var x = document.getElementById("toggleMenu");
+
+    x.style.display = "none";
+    var w = window.outerWidth;
+    var h = window.outerHeight;
+    if(w < 1000){
+        bars.style.display = "block";
+    } else {
+        bars.style.display = "none";
+    }
+}
