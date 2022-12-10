@@ -1,4 +1,6 @@
 var checkbox = document.querySelector("input[name=toggle]");
+var subMenu = document.getElementById("toggleMenu");
+subMenu.style.display = "none";
 
 $(document).ready(function () {
     let text = window.location.pathname;
@@ -46,9 +48,9 @@ function menuToggle() {
     }
 }
 
-window.addEventListener("resize", myFunction);
+window.addEventListener("resize", belowSmScreen);
 
-function myFunction() {
+function belowSmScreen() {
     var bars = document.getElementById("bars");
     var x = document.getElementById("toggleMenu");
 
@@ -60,4 +62,8 @@ function myFunction() {
     } else {
         bars.style.display = "none";
     }
+
+    if(w < 650){
+        x.style.display = "none";
+    } 
 }
